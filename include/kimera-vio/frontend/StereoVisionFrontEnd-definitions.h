@@ -49,8 +49,8 @@ struct FrontendOutput : public PipelinePayload {
         relative_pose_body_stereo_(relative_pose_body_stereo),
         stereo_frame_lkf_(stereo_frame_lkf),
         pim_(pim),
-        feature_tracks_(feature_tracks),
-        debug_tracker_info_(debug_tracker_info) {}
+        debug_tracker_info_(debug_tracker_info),
+        feature_tracks_(feature_tracks) {}
 
   virtual ~FrontendOutput() = default;
 

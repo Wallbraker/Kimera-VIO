@@ -45,19 +45,18 @@ class CameraParams : public PipelineParams {
       : PipelineParams("Camera Parameters"),
         camera_id_(),
         intrinsics_(),
+        K_(),
         body_Pose_cam_(),
         frame_rate_(),
         image_size_(),
         calibration_(),
-        K_(),
         distortion_model_(),
         distortion_coeff_(),
         undistRect_map_x_(),
         undistRect_map_y_(),
         R_rectify_(),
         P_(),
-        is_stereo_with_camera_ids_() {
-  }
+        is_stereo_with_camera_ids_() {}
   virtual ~CameraParams() = default;
 
   // Parse YAML file describing camera parameters.
